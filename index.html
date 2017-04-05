@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bank Loan Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+       <form action="#" method="POST">
+       		<fieldset>
+       			<legend>Contact Info</legend>
+       				<input type="text" name="first-name" placeholder="First Name" required>
+		       		<input type="text" name="mid-inital" maxlength="1" placeholder="Middle Initial" required>
+		       		<input type="text" name="last-name" placeholder="Last Name" required><br>
+		       		<input type="text" name="home-street" placeholder="Street Address" size="42" required><br>
+		       		<input type="text" name="home-city" placeholder="City" required>
+		       		<input type="text" name="home-state" maxlength="2" placeholder="State" required>
+		       		<input type="text" name="home-zip" maxlength="5" placeholder="Zip Code " required><br>
+		       		<input type="email" name="email" placeholder="Email Address" required>
+       				<input type="text" name="phone" placeholder="Phone Number" maxlength="10" required>
+       				<input type="url" name="linkedIn" placeholder="LinkedIn URL">
+	       	</fieldset>
+	       	<fieldset>
+	       		<legend>Employer Info</legend>
+		       		<input type="text" name="employer-name" placeholder="Employer Name" required><br>
+		       		<input type="text" name="work-street" placeholder="Employer Address" size="42" required><br>
+		       		<input type="text" name="work-city" placeholder="Employer City" required>
+		       		<input type="text" name="work-state" placeholder="Employer State" maxlength="2" required>
+		       		<input type="text" name="work-zip" placeholder="Employer Zip" maxlength="5" required>
+       		</fieldset>
+       		<fieldset>
+       			<legend>Loan Info</legend>
+	       			<label>Loan Type
+			       		<select name="loan-type" required>
+		  					<option value="commercial">Commercial</option>
+		 				 	<option value="real-estate">Real Estate</option>
+		  					<option value="personal">Personal</option>
+		  					<option value="mortgage">Mortgage</option>
+						</select>
+					</label><br>
+	       			<input type="text" name="loan-ammount" placeholder="Requested Loan Ammount" size="23" required><br>
+	       			<label>Desired Loan Length: </label><br>
+			       		<input type="radio" name="loanLength" value="5year">5 Year
+			       		<input type="radio" name="loanLength" value="15year">15 Year
+			       		<input type="radio" name="loanLength" value="30year" checked="checked">30 Year <br>
+	       	</fieldset>
+	       	<fieldset>
+	       		<legend>Additional Information </legend>
+		       		<input type="checkbox" name="downPayment" value="true"> I Have A Down Payment <br>
+		       		<input type="checkbox" name="outOfState" value="true"> Out-Of-State Resident <br>
+		       		<input type="checkbox" name="married" value="true"> Married <br>
+		       		<input type="checkbox" name="coSigner" value="true"> Loan Will Be Co-Signed <br>
+       		</fieldset>
+       		<fieldset>
+       			<textarea name="comments" cols="20" rows="4">Additional Comments</textarea>
+			</fieldset>
+			<input type="submit">
+       </form>   
+    </body>
+</html>
